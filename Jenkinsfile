@@ -49,6 +49,10 @@ pipeline{
 
 					
 		}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1fb73b08f6da4dac88abd4f7779c002fd356bbb8
 
 
 
