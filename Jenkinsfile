@@ -23,29 +23,9 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-            steps {
-                // Deploy your Java project (if applicable)
-                // You might copy the built artifacts to a server, deploy to a container, etc.
-                // Example: sh 'scp target/your-project.jar user@server:/path/to/deployment/'
-            }
-        }
+    
     }
 
-    post {
-        always {
-            // Clean up any resources or perform cleanup tasks
-            // Example: deleteDir()
-        }
-
-        success {
-            // Actions to take if the pipeline succeeds
-            // Example: echo 'Pipeline succeeded!'
-        }
-
-        failure {
-            // Actions to take if the pipeline fails
-            // Example: echo 'Pipeline failed!'
-        }
+    
     }
-}
+
