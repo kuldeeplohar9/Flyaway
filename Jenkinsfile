@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'maven:latest'
+			docker.image('maven:latest').inside("${WORKSPACE}/Capstone_FlyAway/")
             args '-v $HOME/.m2:/root/.m2:z -u root'
             reuseNode true
         }
